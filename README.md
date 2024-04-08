@@ -1,44 +1,26 @@
-# Tic-Tac-Toe TP
-Le TP est à rendre au plus tard **lundi 8 avril 2024, minuit**, par mail en signalant votre nom, prénom et le lien du repository public sur lequel se trouve vos livrables, le mail d'envoi **et** l'historique des commits faisant foi.
+### Tic-Tac-Toe TP
+J'ai choisi d'utliser le workflow github car il présente plusieurs avantages tels que :
 
-Il vous est possible de vous entre-aider mais votre rendu est **personnel** sauf mention contraire expresse pour les situations identifiées en amont.
+## Collaboration Facilitée 
+GitHub facilite la collaboration entre les membres de l'équipe grâce à ses fonctionnalités telles que les demandes de tirage (Pull Requests), les problèmes (Issues), les commentaires et les révisions de code.
 
-## Instructions
+## Gestion des Versions
+GitHub fournit un contrôle de version efficace pour suivre les modifications apportées au code source au fil du temps. Les développeurs peuvent voir l'historique des modifications, revenir à des versions précédentes et fusionner les modifications de manière transparente.
+## Visibilité et Transparence
+En hébergeant votre code source sur GitHub, vous rendez votre projet accessible à tous, ce qui favorise la transparence et la visibilité. Les personnes intéressées peuvent explorer votre code, signaler des problèmes et proposer des contributions.
+## Suivi des Problèmes et des Tâches 
+ GitHub offre des fonctionnalités avancées de suivi des problèmes et des tâches, ce qui permet aux équipes de garder une trace des problèmes, des bugs, des demandes de fonctionnalités et des tâches à effectuer.
+## Intégration Continue (CI) et Déploiement Continu (CD) :
+GitHub intègre nativement des outils d'intégration continue et de déploiement continu, ce qui permet d'automatiser les processus de construction, de test et de déploiement du logiciel.
 
-### Préparer son environnement
-- A partir du docker-compose disponible sur le repository [docker-gitlab-jenkins](https://github.com/June-Ruth/docker-gitlab-jenkins)
+## Communauté et Réseau 
+GitHub abrite une vaste communauté de développeurs du monde entier. En hébergeant votre projet sur GitHub, vous pouvez bénéficier des connaissances, des conseils et des contributions de la communauté open source.
 
-### Récupérer le projet en local
-- Clôner le projet en local
-- Mettre en place le projet sur le GitLab local avec le nom formaté selon le schéma suivant : **_nom_prenom_tic-tac-toe_**
-
-### Création d'une pipeline d'intégration et de déploiement
-La pipeline doit être formatée selon le schéma suivant : **_nom_prenom_tic-tac-toe_**
-#### Outils
-- La pipeline doit être éxécutée à partir de la plateforme d'intégration continue Jenkins
-#### Fréquence
-- La pipeline doit pouvoir être exécutée manuellement
-- La pipeline doit être exécutée à chaque action de push et de merge request
-##### Contenu
-- La pipeline doit exécuter les tests
-- Le stage de test doit mentionner le type de tests exéutés selon la pyramide des tests (soit dans son nom, soit dans la console lors de l'exécution)
-- La pipeline doit fournir un rapport de couverture Clover
-- La pipeline doit fournir les artefacts de distribution nécessaires au déploiement
-
-### Correction des tests
-- Les tests non-validés par la pipeline doivent être corrigés afin d'être valides
-
-## Livrables
-- Le code final sera rendu disponible sur un repository public
-- La branche principale (main) sera à jour de l'ensemble des modifications
-- Le code final devra conserver l'historique des branches et commits
-- Le README présentera le workflow Git choisi en expliquant ses avantages et/ou inconvénients
-- Le repository disposera d'un package spécifique pour les documents issus de la pipeline :
-  - le rapport de couverture Clover fourni lors du dernier cycle Jenkins (format .html)
-  - une copie (format .pdf) du dashboard principal de la **pipeline** sur Jenkins présentant au moins un cycle exécuté de manière automatique, les artefacts issue du build et le résumé de la couverture Clover
-  - une copie (format .pdf) des paramètres mis en place sur GitLab servant à l'intégration de Jenkins
+## Documentation et Wiki
+GitHub propose des fonctionnalités intégrées pour la documentation du projet, y compris la possibilité de créer un wiki pour stocker des guides, des tutoriels et d'autres informations utiles.
  
-## Attention
-- Les projets qui ne respectent pas les conventions de nommage ne seront pas évalués.
-- Les projets dont l'historique git n'est pas accessible ne seront pas évalués.
-- Les repository innaccessibles (adresse erronée, settings non-public) ne seront pas évaluées.
+## Sécurité et Contrôle d'Accès:
+GitHub propose des fonctionnalités avancées de sécurité, y compris le contrôle d'accès granulaire, la gestion des autorisations et la détection des vulnérabilités dans le code.
+
+## Flexibilité et Intégration :
+GitHub offre une grande flexibilité et s'intègre facilement avec de nombreux autres outils et services populaires utilisés dans le développement logiciel, tels que des outils de gestion de projet, des services de déploiement, des plateformes de communication, etc.
